@@ -1,4 +1,3 @@
-# app/models/concerns/moderable.rb
 require 'httparty'
 
 module Moderable
