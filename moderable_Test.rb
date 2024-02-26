@@ -1,4 +1,3 @@
-# spec/models/concerns/moderable_spec.rb
 require 'rails_helper'
 
 RSpec.describe Moderable do
