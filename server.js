@@ -1,4 +1,3 @@
-// Développé par une équipe de développeurs
 
 const express = require('express'); 
 const axios = require('axios'); 
