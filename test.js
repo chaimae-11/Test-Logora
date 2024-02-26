@@ -52,7 +52,7 @@ describe('Test des endpoints de modération', () => {
     axios.post = jest.fn().mockRejectedValue({ response: { status: 500, data: { erreur: 'Erreur de l\'API Logora' } } });
 
     const response = await supertest(app)
-      .post('/api/moderation/predict')
+      .post('https://moderation.logora.fr/predict')
       .send(mockData);
 
     expect(response.status).toBe(500);
