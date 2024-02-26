@@ -8,7 +8,7 @@ const PORT = 3000;
 app.use(express.json());
 
 // Endpoint pour la prédiction de modération
-app.post('/api/moderation/predict', async (req, res) => {
+app.post('https://moderation.logora.fr/predict', async (req, res) => {
   try {
     // Extraction des données de la requête
     const { text, language } = req.body;
